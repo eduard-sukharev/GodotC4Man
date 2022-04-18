@@ -10,23 +10,54 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
+"class": "AbstractDestructable",
+"language": "GDScript",
+"path": "res://Scripts/AbstractDestructable.gd"
+}, {
+"base": "Node",
 "class": "AbstractMovement",
 "language": "GDScript",
 "path": "res://Scripts/AbstractMovement.gd"
+}, {
+"base": "Node",
+"class": "AbstractSpawner",
+"language": "GDScript",
+"path": "res://Scripts/AbstractSpawner.gd"
+}, {
+"base": "AbstractSpawner",
+"class": "AdjacentSpawner",
+"language": "GDScript",
+"path": "res://Scripts/AdjacentSpawner.gd"
+}, {
+"base": "AbstractDestructable",
+"class": "Destructable",
+"language": "GDScript",
+"path": "res://Scripts/Destructable.gd"
 }, {
 "base": "AbstractMovement",
 "class": "PlayerMovement",
 "language": "GDScript",
 "path": "res://Scripts/PlayerMovement.gd"
+}, {
+"base": "AbstractSpawner",
+"class": "UnderSpawner",
+"language": "GDScript",
+"path": "res://Scripts/UnderSpawner.gd"
 } ]
 _global_script_class_icons={
+"AbstractDestructable": "",
 "AbstractMovement": "",
-"PlayerMovement": ""
+"AbstractSpawner": "",
+"AdjacentSpawner": "",
+"Destructable": "",
+"PlayerMovement": "",
+"UnderSpawner": ""
 }
 
 [application]
 
 config/name="c4man"
+run/main_scene="res://Map1.tscn"
 config/icon="res://icon.png"
 
 [physics]
